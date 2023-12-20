@@ -1,0 +1,149 @@
+brand,price,mileage,transmission,year,fuel,performance,emission
+brand,price,mileage,transmission,year,fuel,performance,emission
+Ford,21500,207.000 km,Schaltgetriebe,07/2010,Diesel,103 kW (140 PS),"172 g/km (komb.) | 6,5 l/100 km (komb.)"
+Opel,26990,22.700 km,Schaltgetriebe,05/2008,Benzin,194 kW (264 PS),"218 g/km (komb.) | 9,2 l/100 km (komb.)"
+Mercedes-Benz,20790,129.000 km,Automatik,06/2017,Benzin,245 kW (333 PS),"173 g/km (komb.) | 7,6 l/100 km (komb.)"
+Mercedes-Benz,44880,65.759 km,Schaltgetriebe,08/2017,Benzin,115 kW (156 PS),"130 g/km (komb.) | 5,6 l/100 km (komb.)"
+Cadillac,38500,129.800 km,Automatik,07/2016,Benzin,313 kW (426 PS),"310 g/km (komb.) | 13,1 l/100 km (komb.)"
+Land,19500,38.900 km,Automatik,05/2019,Diesel,132 kW (179 PS),"152 g/km (komb.) | 5,8 l/100 km (komb.)"
+Audi,9400,61.200 km,Schaltgetriebe,12/2018,Benzin,85 kW (116 PS),"122 g/km (komb.) | 5,4 l/100 km (komb.)"
+Volkswagen,13950,145.000 km,Schaltgetriebe,10/2015,Benzin,63 kW (86 PS),"114 g/km (komb.) | 4,9 l/100 km (komb.)"
+Audi,26900,174.639 km,Automatik,09/2012,Diesel,150 kW (204 PS),"140 g/km (komb.) | 5,3 l/100 km (komb.)"
+Porsche,5999,146.000 km,Schaltgetriebe,07/1999,Benzin,221 kW (300 PS),0 g/km (komb.)
+Volkswagen,25970,165.999 km,Schaltgetriebe,11/2011,Diesel,66 kW (90 PS),"109 g/km (komb.) | 4,2 l/100 km (komb.)"
+Cupra,17900,36.450 km,Automatik,06/2022,Benzin,110 kW (150 PS),"150 g/km (komb.) | 6,6 l/100 km (komb.)"
+Volkswagen,7999,38.850 km,Automatik,11/2018,Benzin,110 kW (150 PS),"112 g/km (komb.) | 4,9 l/100 km (komb.)"
+Audi,11330,238.000 km,Automatik,05/2009,Benzin,213 kW (290 PS),"225 g/km (komb.) | 9,7 l/100 km (komb.)"
+Kia,24880,30 km,Schaltgetriebe,12/2011,Benzin,80 kW (109 PS),"132 g/km (komb.) | 6,9 l/100 km (komb.)"
+Mercedes-Benz,11449,32.385 km,Schaltgetriebe,01/2019,Benzin,115 kW (156 PS),"170 g/km (komb.) | 7,5 l/100 km (komb.)"
+Volkswagen,18950,182.450 km,Schaltgetriebe,02/2017,Diesel,110 kW (150 PS),"107 g/km (komb.) | 4,1 l/100 km (komb.)"
+Audi,39950,84.999 km,Automatik,03/2014,Benzin,165 kW (224 PS),"156 g/km (komb.) | 6,6 l/100 km (komb.)"
+Mercedes-Benz,19900,145.000 km,Automatik,06/2015,Benzin,410 kW (557 PS),"230 g/km (komb.) | 9,9 l/100 km (komb.)"
+brand,price,mileage,transmission,year,fuel,performance,emission
+Mercedes-Benz,8999,340.000 km,Automatik,12/2009,Diesel,170 kW (231 PS),"186 g/km (komb.) | 6,8 l/100 km (komb.)"
+Opel,19300,87.950 km,Automatik,09/2019,Diesel,125 kW (170 PS),"146 g/km (komb.) | 5,5 l/100 km (komb.)"
+Ford,34900,50.150 km,Schaltgetriebe,02/2019,Diesel,125 kW (170 PS),"224 g/km (komb.) | 8,6 l/100 km (komb.)"
+Audi,7970,147.000 km,Schaltgetriebe,03/2010,Benzin,92 kW (125 PS),142 g/km (komb.) | 6 l/100 km (komb.)
+Mercedes-Benz,17998,169.900 km,Automatik,02/2014,Diesel,150 kW (204 PS),183 g/km (komb.) | 7 l/100 km (komb.)
+Volkswagen,8880,147.001 km,Automatik,03/2012,Benzin,63 kW (86 PS),"135 g/km (komb.) | 5,8 l/100 km (komb.)"
+Audi,20412,42.290 km,Schaltgetriebe,11/2017,Benzin,140 kW (190 PS),- (g/km)
+BMW,18900,150.100 km,Automatik,03/2017,Diesel,140 kW (190 PS),"130 g/km (komb.) | 4,9 l/100 km (komb.)"
+Kia,17900,50.200 km,Schaltgetriebe,05/2018,Benzin,97 kW (132 PS),"156 g/km (komb.) | 6,7 l/100 km (komb.)"
+Audi,24900,82.900 km,Automatik,01/2018,Benzin,185 kW (252 PS),"142 g/km (komb.) | 6,1 l/100 km (komb.)"
+Toyota,22480,38.740 km,Schaltgetriebe,03/2013,Benzin,147 kW (200 PS),"181 g/km (komb.) | 7,8 l/100 km (komb.)"
+Audi,10449,135.000 km,Automatik,11/2012,Benzin,90 kW (122 PS),"114 g/km (komb.) | 4,9 l/100 km (komb.)"
+Mercedes-Benz,11999,167.567 km,Automatik,06/2012,Benzin,150 kW (204 PS),"154 g/km (komb.) | 6,5 l/100 km (komb.)"
+Mercedes-Benz,8999,200.000 km,Schaltgetriebe,06/2009,Diesel,150 kW (204 PS),"167 g/km (komb.) | 6,4 l/100 km (komb.)"
+BMW,24950,39.282 km,Schaltgetriebe,07/2020,Diesel,110 kW (150 PS),"128 g/km (komb.) | 4,9 l/100 km (komb.)"
+BMW,34999,57.242 km,Automatik,11/2018,Benzin,135 kW (184 PS),"166 g/km (komb.) | 7,3 l/100 km (komb.)"
+Mercedes-Benz,10990,199.900 km,Schaltgetriebe,03/2007,Diesel,95 kW (129 PS),"254 g/km (komb.) | 9,6 l/100 km (komb.)"
+Kia,23479,56.537 km,Automatik,06/2019,Benzin,150 kW (204 PS),"163 g/km (komb.) | 7,1 l/100 km (komb.)"
+brand,price,mileage,transmission,year,fuel,performance,emission
+Mercedes-Benz,148770,27.801 km,Automatik,07/2016,Benzin,310 kW (421 PS),"323 g/km (komb.) | 13,8 l/100 km (komb.)"
+Hyundai,17400,110.752 km,Schaltgetriebe,07/2017,Benzin,130 kW (177 PS),- (g/km)
+Mercedes-Benz,36900,29.702 km,Automatik,05/2019,Benzin,135 kW (184 PS),"189 g/km (komb.) | 8,3 l/100 km (komb.)"
+Mazda,14600,114.029 km,Schaltgetriebe,08/2011,Diesel,105 kW (143 PS),"255 g/km (komb.) | 9,3 l/100 km (komb.)"
+Alpina,299890,48.034 km,Schaltgetriebe,06/1994,Benzin,306 kW (416 PS),"- (g/km) | 9,3 l/100 km (komb.)"
+Kia,32979,5 km,Automatik,- (Erstzulassung),Benzin,150 kW (204 PS),"147 g/km (komb.) | 6,5 l/100 km (komb.)"
+Volkswagen,25900,17.750 km,Automatik,12/2021,Elektro,125 kW (170 PS),0 g/km (komb.)
+Kia,23479,12.202 km,Automatik,03/2023,Benzin,118 kW (160 PS),"132 g/km (komb.) | 5,8 l/100 km (komb.)"
+Lotus,112870,21 km,Automatik,- (Erstzulassung),Benzin,298 kW (405 PS),"258 g/km (komb.) | 11,4 l/100 km (komb.)"
+Audi,19980,72.100 km,Automatik,03/2017,Benzin,110 kW (150 PS),"143 g/km (komb.) | 6,2 l/100 km (komb.)"
+Skoda,16750,53.080 km,Schaltgetriebe,07/2020,Benzin,70 kW (95 PS),"116 g/km (komb.) | 5,1 l/100 km (komb.)"
+Hyundai,16490,40.300 km,Automatik,09/2017,Elektro/Benzin,104 kW (141 PS),"97 g/km (komb.) | 4,2 l/100 km (komb.)"
+Hyundai,15990,43.600 km,Schaltgetriebe,07/2019,Benzin,88 kW (120 PS),- (g/km)
+Mercedes-Benz AMG,46990,85.150 km,Automatik,07/2018,Benzin,270 kW (367 PS),"220 g/km (komb.) | 9,6 l/100 km (komb.)"
+BMW,29970,28.889 km,Automatik,06/2020,Diesel,170 kW (231 PS),"136 g/km (komb.) | 5,2 l/100 km (komb.)"
+Kia,19850,15.000 km,Schaltgetriebe,05/2019,Benzin,103 kW (140 PS),"130 g/km (komb.) | 5,7 l/100 km (komb.)"
+Kia,13749,138.450 km,Schaltgetriebe,02/2019,Diesel,100 kW (136 PS),"132 g/km (komb.) | 3,9 l/100 km (komb.)"
+Mercedes-Benz,24999,86.000 km,Automatik,02/2017,Benzin,155 kW (211 PS),"123 g/km (komb.) | 5,3 l/100 km (komb.)"
+brand,price,mileage,transmission,year,fuel,performance,emission
+Audi,19740,85.300 km,Automatik,02/2016,Diesel,110 kW (150 PS),"133 g/km (komb.) | 5,3 l/100 km (komb.)"
+Opel,8800,33.166 km,Schaltgetriebe,09/1969,Benzin,44 kW (60 PS),- (g/km)
+Toyota,12350,122.150 km,Schaltgetriebe,02/2014,Benzin,97 kW (132 PS),"140 g/km (komb.) | 6,1 l/100 km (komb.)"
+SEAT,9999,122.932 km,Schaltgetriebe,05/2012,Benzin,110 kW (150 PS),"171 g/km (komb.) | 7,2 l/100 km (komb.)"
+Kia,12990,28.252 km,Schaltgetriebe,11/2016,Benzin,99 kW (135 PS),"141 g/km (komb.) | 6,3 l/100 km (komb.)"
+Mercedes-Benz,22499,69.931 km,Automatik,07/2017,Benzin,115 kW (156 PS),"130 g/km (komb.) | 5,6 l/100 km (komb.)"
+Kia,17490,110.880 km,Automatik,11/2019,Diesel,100 kW (136 PS),"109 g/km (komb.) | 4,2 l/100 km (komb.)"
+Lamborghini,549999,3.640 km,Automatik,12/2022,Benzin,580 kW (789 PS),"- (g/km) | 12,7 l/100 km (komb.)"
+Fiat,4990,117.000 km,Schaltgetriebe,12/2009,Benzin,51 kW (69 PS),"121 g/km (komb.) | 5,1 l/100 km (komb.)"
+Hyundai,14990,10.000 km,Schaltgetriebe,04/2019,Benzin,88 kW (120 PS),"119 g/km (komb.) | 5,1 l/100 km (komb.)"
+Volkswagen,25980,8.600 km,Schaltgetriebe,01/2023,Benzin,110 kW (150 PS),"146 g/km (komb.) | 6,4 l/100 km (komb.)"
+Jaguar,26850,63.560 km,Automatik,07/2020,Diesel,132 kW (179 PS),158 g/km (komb.) | 6 l/100 km (komb.)
+Audi,34250,45.700 km,Automatik,03/2021,Benzin,180 kW (245 PS),"144 g/km (komb.) | 6,3 l/100 km (komb.)"
+Mitsubishi,18900,39.862 km,Automatik,07/2018,Benzin,120 kW (163 PS),- (g/km)
+Audi,13740,94.900 km,Schaltgetriebe,06/2018,Diesel,66 kW (90 PS),"102 g/km (komb.) | 4,1 l/100 km (komb.)"
+Mercedes-Benz,19899,33.054 km,Automatik,02/2018,Benzin,115 kW (156 PS),"130 g/km (komb.) | 5,7 l/100 km (komb.)"
+BMW,48950,38.927 km,Automatik,06/2018,Benzin,331 kW (450 PS),"203 g/km (komb.) | 8,7 l/100 km (komb.)"
+Mercedes-Benz,37870,81.200 km,Automatik,01/2020,Diesel,143 kW (194 PS),"164 g/km (komb.) | 6,2 l/100 km (komb.)"
+brand,price,mileage,transmission,year,fuel,performance,emission
+Opel,18990,57.887 km,Automatik,11/2019,Benzin,96 kW (131 PS),"164 g/km (komb.) | 7,2 l/100 km (komb.)"
+Renault,29999,10 km,Automatik,12/2023,Elektro/Benzin,105 kW (143 PS),"96 g/km (komb.) | 4,2 l/100 km (komb.)"
+Mercedes-Benz,41690,13.450 km,Automatik,11/2021,Elektro/Benzin,118 kW (160 PS),61 km Reichweite
+Dodge,31999,- (g/km),"21,1 kWh/100 km (kombiniert, gewichtet)",66.227 km,Automatik,01/2018,Benzin
+Mercedes-Benz,184900,295 kW (401 PS),- (g/km),28.000 km,Automatik,01/2023,Benzin
+Audi,24990,405 kW (551 PS),0 g/km (komb.) | - (l/100 km),53.553 km,Automatik,02/2018,Benzin
+MINI,21490,140 kW (190 PS),"137 g/km (komb.) | 5,9 l/100 km (komb.)",10.360 km,Automatik,11/2021,Elektro
+BMW,76980,135 kW (184 PS),233 km Reichweite,"0 g/km (komb.) | 17,6 kWh/100 km (komb.)",43.945 km,Automatik,10/2020
+Hyundai,8790,Benzin,250 kW (340 PS),"199 g/km (komb.) | 8,7 l/100 km (komb.)",112.680 km,Schaltgetriebe,06/2015
+BMW,76980,Benzin,74 kW (101 PS),"133 g/km (komb.) | 5,6 l/100 km (komb.)",43.945 km,Automatik,10/2020
+Renault,26999,Benzin,250 kW (340 PS),"199 g/km (komb.) | 8,7 l/100 km (komb.)",10 km,Automatik,- (Erstzulassung)
+Renault,26444,Benzin,116 kW (158 PS),"124 g/km (komb.) | 5,4 l/100 km (komb.)",10 km,Schaltgetriebe,- (Erstzulassung)
+BMW,32850,Benzin,103 kW (140 PS),"130 g/km (komb.) | 5,7 l/100 km (komb.)",99.987 km,Automatik,05/2020
+BMW,24780,Diesel,195 kW (265 PS),"0 g/km (komb.) | 4,7 l/100 km (komb.)",70.756 km,Automatik,12/2020
+BMW,33850,Diesel,140 kW (190 PS),"124 g/km (komb.) | 4,7 l/100 km (komb.)",69.271 km,Automatik,12/2020
+BMW,31980,Diesel,140 kW (190 PS),108 g/km (komb.) | 4 l/100 km (komb.),25.840 km,Automatik,08/2021
+BMW,25850,Elektro/Benzin,162 kW (220 PS),0 g/km (komb.),123.824 km,Automatik,11/2020
+brand,price,mileage,transmission,year,fuel,performance,emission
+BMW,25850,123.824 km,Automatik,11/2020,Diesel,140 kW (190 PS),"117 g/km (komb.) | 4,5 l/100 km (komb.)"
+BMW,42980,56.553 km,Automatik,07/2020,- Kraftstoff,140 kW (190 PS),- (g/km)
+Peugeot,16250,11.000 km,Schaltgetriebe,08/2022,Benzin,55 kW (75 PS),"94 g/km (komb.) | 4,1 l/100 km (komb.)"
+Nissan,40490,10 km,Automatik,06/2023,Benzin,116 kW (158 PS),"131 g/km (komb.) | 5,8 l/100 km (komb.)"
+Mercedes-Benz,51753,19.230 km,Automatik,03/2023,Benzin,150 kW (204 PS),"- (g/km) | 6,5 l/100 km (komb.)"
+Porsche,148738,13.150 km,Automatik,05/2023,Benzin,338 kW (460 PS),"- (g/km) | 13,2 l/100 km (komb.)"
+SEAT,15490,156.000 km,Schaltgetriebe,06/2013,Diesel,103 kW (140 PS),"146 g/km (komb.) | 5,5 l/100 km (komb.)"
+Dacia,17639,10 km,Schaltgetriebe,- (Erstzulassung),Autogas (LPG),74 kW (101 PS),"113 g/km (komb.) | 4,9 l/100 km (komb.)"
+Renault,24790,1.001 km,Schaltgetriebe,12/2023,Benzin,67 kW (91 PS),"120 g/km (komb.) | 5,3 l/100 km (komb.)"
+Mercedes-Benz,21200,67.000 km,Automatik,10/2016,Benzin,155 kW (211 PS),"154 g/km (komb.) | 6,6 l/100 km (komb.)"
+Opel,2000,177.932 km,Schaltgetriebe,05/2012,Benzin,51 kW (69 PS),"126 g/km (komb.) | 5,3 l/100 km (komb.)"
+BMW,26810,18.199 km,Automatik,11/2021,Benzin,103 kW (140 PS),"121 g/km (komb.) | 5,3 l/100 km (komb.)"
+Volkswagen,24450,7 km,Automatik,11/2023,Benzin,81 kW (110 PS),"142 g/km (komb.) | 6,2 l/100 km (komb.)"
+Dacia,14990,45.800 km,Schaltgetriebe,11/2018,Benzin,84 kW (114 PS),"149 g/km (komb.) | 6,5 l/100 km (komb.)"
+Porsche,169990,- km,Automatik,- (Erstzulassung),Benzin,349 kW (475 PS),"290 g/km (komb.) | 12,8 l/100 km (komb.)"
+Volkswagen,22990,80.000 km,Automatik,12/2010,Diesel,103 kW (140 PS),"204 g/km (komb.) | 7,7 l/100 km (komb.)"
+brand,price,mileage,transmission,year,fuel,performance,emission
+Peugeot,1499,214.000 km,Schaltgetriebe,05/2005,Benzin,100 kW (136 PS),"194 g/km (komb.) | 8,2 l/100 km (komb.)"
+MINI,3990,184.000 km,Schaltgetriebe,03/2007,Benzin,88 kW (120 PS),"139 g/km (komb.) | 5,8 l/100 km (komb.)"
+SEAT,3450,245.000 km,Schaltgetriebe,08/2007,Diesel,103 kW (140 PS),"178 g/km (komb.) | 6,7 l/100 km (komb.)"
+Mercedes-Benz,9990,389.000 km,Automatik,11/2015,Diesel,100 kW (136 PS),"122 g/km (komb.) | 4,6 l/100 km (komb.)"
+Volkswagen,3990,395.000 km,Schaltgetriebe,12/2010,Diesel,103 kW (140 PS),"119 g/km (komb.) | 4,6 l/100 km (komb.)"
+Opel,21718,12 km,Schaltgetriebe,12/2023,Diesel,81 kW (110 PS),"128 g/km (komb.) | 4,9 l/100 km (komb.)"
+Audi,13950,151.000 km,Automatik,05/2013,Diesel,130 kW (177 PS),"140 g/km (komb.) | 5,3 l/100 km (komb.)"
+Mazda,18980,44.500 km,Schaltgetriebe,11/2019,Benzin,89 kW (121 PS),"141 g/km (komb.) | 6,2 l/100 km (komb.)"
+Mazda,7990,196.000 km,Schaltgetriebe,12/2016,Benzin,66 kW (90 PS),"105 g/km (komb.) | 4,5 l/100 km (komb.)"
+Audi,53790,0 km,Automatik,- (Erstzulassung),Benzin,140 kW (190 PS),"190 g/km (komb.) | 8,3 l/100 km (komb.)"
+Mazda,24890,57.400 km,Automatik,03/2019,Diesel,110 kW (150 PS),"143 g/km (komb.) | 5,5 l/100 km (komb.)"
+Volkswagen,36990,39.800 km,Automatik,05/2019,Diesel,176 kW (239 PS),"167 g/km (komb.) | 6,4 l/100 km (komb.)"
+Volkswagen,23230,106.390 km,Automatik,02/2017,Diesel,110 kW (150 PS),"147 g/km (komb.) | 5,6 l/100 km (komb.)"
+Toyota,17777,36.905 km,Schaltgetriebe,11/2018,Benzin,85 kW (116 PS),136 g/km (komb.) | 6 l/100 km (komb.)
+Hyundai,18888,76.280 km,Automatik,03/2019,Elektro/Benzin,77 kW (105 PS),"97 g/km (komb.) | 4,2 l/100 km (komb.)"
+Dacia,15333,41.648 km,Schaltgetriebe,02/2019,Benzin,84 kW (114 PS),"0 g/km (komb.) | 6,5 l/100 km (komb.)"
+Renault,14444,35.161 km,Automatik,12/2019,Elektro,51 kW (69 PS),240 km Reichweite
+brand,price,mileage,transmission,year,fuel,performance,emission
+Renault,14444,52.717 km,Schaltgetriebe,06/2021,Benzin,66 kW (90 PS),"117 g/km (komb.) | 5,1 l/100 km (komb.)"
+Renault,17777,61.710 km,Automatik,11/2018,Benzin,96 kW (131 PS),"134 g/km (komb.) | 5,9 l/100 km (komb.)"
+Renault,28888,50 km,Automatik,10/2023,Benzin,96 kW (131 PS),"148 g/km (komb.) | 6,5 l/100 km (komb.)"
+Renault,19888,26.228 km,Schaltgetriebe,09/2021,Benzin,103 kW (140 PS),0 g/km (komb.)
+Hyundai,8888,45.237 km,Schaltgetriebe,09/2014,Benzin,63 kW (86 PS),"114 g/km (komb.) | 4,9 l/100 km (komb.)"
+Renault,15555,40.688 km,Automatik,11/2020,Elektro,51 kW (69 PS),240 km Reichweite
+Dacia,17777,0 g/km (komb.),37.415 km,Schaltgetriebe,08/2020,Benzin,96 kW (131 PS)
+Ford,22888,"141 g/km (komb.) | 6,2 l/100 km (komb.)",4.530 km,Schaltgetriebe,02/2021,Benzin,92 kW (125 PS)
+Renault,16388,114 g/km (komb.) | 5 l/100 km (komb.),26.851 km,Schaltgetriebe,12/2017,Benzin,96 kW (131 PS)
+Ford,14888,"133 g/km (komb.) | 5,7 l/100 km (komb.)",84.300 km,Schaltgetriebe,09/2018,Benzin,74 kW (101 PS)
+Hyundai,17777,"120 g/km (komb.) | 5,3 l/100 km (komb.)",62.719 km,Schaltgetriebe,08/2018,Benzin,103 kW (140 PS)
+Renault,16666,"124 g/km (komb.) | 5,4 l/100 km (komb.)",62.058 km,Automatik,08/2020,Elektro,51 kW (69 PS)
+MINI,15555,386 km Reichweite,0 g/km (komb.),71.502 km,Schaltgetriebe,07/2017,Benzin
+Renault,19222,75 kW (102 PS),"121 g/km (komb.) | 5,1 l/100 km (komb.)",50 km,Automatik,07/2023,Benzin
+Renault,18777,66 kW (90 PS),"100 g/km (komb.) | 6,1 l/100 km (komb.)",50 km,Automatik,04/2023,Benzin
+Fiat,14888,66 kW (90 PS),"100 g/km (komb.) | 6,1 l/100 km (komb.)",27.234 km,Schaltgetriebe,09/2016,Benzin
+Dacia,17777,81 kW (110 PS),"152 g/km (komb.) | 6,4 l/100 km (komb.)",25.322 km,Schaltgetriebe,08/2019,Benzin
