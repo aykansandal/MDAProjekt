@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>scrape copy</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>MDAProjekt</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7774,7 +7774,7 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p><strong>9.Welche Besonderheiten sind Ihnen aufgefallen?</strong></p>
-<p>Zur Identifizierung einzigartiger Muster, Trends oder Merkmale, die in den Daten hervorstechen, haben wir statistische Tests, Verteilungs-Korrelationsmatrizen</p>
+<p>Zur Identifizierung einzigartiger Muster, Trends oder Merkmale, die in den Daten hervorstechen, haben wir statistische Tests, Verteilungs-Korrelationsmatrizen verwendet.</p>
 </div>
 </div>
 </div>
@@ -9795,15 +9795,15 @@ P(B|A) ist 0.229856, Prozentsatz ist 22.985602%
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h4 id="Hypothesen-und-Schlussfolgerungen">Hypothesen und Schlussfolgerungen<a class="anchor-link" href="#Hypothesen-und-Schlussfolgerungen">¶</a></h4><p>Formulieren Sie mindestens drei testbare Hypothesen auf der Grundlage Ihrer Datenuntersuchung.</p>
 <ul>
-<li><p>Was sind die Nullhypothesen und was sind die alternativen Hypothesen?**</p>
+<li><p><strong>Was sind die Nullhypothesen und was sind die alternativen Hypothesen?</strong></p>
 </li>
-<li><p>Welche Hypothesen lassen sich durch einen Hypothesentest verwerfen oder bestätigen?**</p>
+<li><p><strong>Welche Hypothesen lassen sich durch einen Hypothesentest verwerfen oder bestätigen?</strong></p>
 </li>
-<li><p>Was sagen Signifikanzniveau und p-Wert über die Hypothesentests aus?**</p>
+<li><p><strong>Was sagen Signifikanzniveau und p-Wert über die Hypothesentests aus?</strong></p>
 </li>
-<li><p>Welche Schlussfolgerungen lassen sich ableiten?**</p>
+<li><p><strong>Welche Schlussfolgerungen lassen sich ableiten?</strong></p>
 </li>
-<li><p>Wie aussagekräftig sind die Ergebnisse in welchen Grenzen?**</p>
+<li><p><strong>Wie aussagekräftig sind die Ergebnisse in welchen Grenzen?</strong></p>
 </li>
 </ul>
 <p>Mithilfe t-test und p-value könnten Null-Hypothese verwerfen oder bestätigen werden.</p>
@@ -9823,7 +9823,7 @@ Das Signifikanzniveau ist die Wahrscheinlichkeit, mit der die Nullhypothese zur�
 Es stellt den Schwellenwert für das akzeptable Risiko eines Fehlers vom Typ I (falsch positiv) dar.
 Ein niedrigeres α bedeutet ein strengeres Kriterium für die Zurückweisung der Nullhypothese.</p>
 <p><strong>P-Wert:</strong>
-Der p-Wert ist die Wahrscheinlichkeit, eine Teststatistik zu beobachten, die genauso extrem oder extremer ist als die in der Stichprobe beobachtete, unter der Annahme, dass die Nullhypothese wahr ist.
+Der p-Wert ist die Wahrscheinlichkeit, eine Teststatistik zu beobachten, die genauso extrem oder extremer ist, als die, in der Stichprobe beobachtete Wahrscheinlichkeit, unter der Annahme, dass die Nullhypothese wahr ist.
 Wenn der p-Wert kleiner oder gleich α ist, liefert er den Beweis für die Ablehnung der Nullhypothese.
 Ein kleiner p-Wert deutet darauf hin, dass es unwahrscheinlich ist, dass die beobachteten Daten auftreten, wenn die Nullhypothese wahr ist.
 Ein größerer p-Wert deutet auf einen schwachen Beweis gegen die Nullhypothese hin.
@@ -9876,8 +9876,6 @@ Interpretation auf der Grundlage des p-Werts und des Signifikanzniveaus:</p>
 
     <span class="n">other_cars</span> <span class="o">=</span> <span class="n">df_shuffledx</span><span class="p">[</span><span class="n">df_shuffledx</span><span class="p">[</span><span class="s1">'color'</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">'red'</span><span class="p">][</span><span class="s1">'price'</span><span class="p">]</span>
     <span class="n">t_stat</span><span class="p">,</span> <span class="n">p_value</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">other_cars</span><span class="p">,</span> <span class="n">red_cars</span><span class="p">)</span>
-    <span class="c1"># print("T-Statistic:", t_stat)</span>
-    <span class="c1"># print("P-Value:", f'{p_value:.70f}')</span>
     <span class="n">p_values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">p_value</span><span class="si">:</span><span class="s1">.10f</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
     <span class="n">t_tests</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">t_stat</span><span class="p">)</span>
 
@@ -9916,32 +9914,6 @@ Letzte Iteration P-Wert: 0.006419294808364309
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">([</span><span class="mi">121</span><span class="p">,</span><span class="mi">232</span><span class="p">,</span><span class="mi">313</span><span class="p">,</span><span class="mi">414</span><span class="p">,</span><span class="mi">515</span><span class="p">,</span><span class="mi">636</span><span class="p">,</span><span class="mi">727</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">22</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">])</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>Ttest_indResult(statistic=5.034190216919246, pvalue=0.0002921240451057143)</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_shuffled</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">frac</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">p_values</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">t_tests</span> <span class="o">=</span> <span class="p">[]</span>
@@ -9951,8 +9923,6 @@ Letzte Iteration P-Wert: 0.006419294808364309
 
     <span class="n">diesel_cars</span> <span class="o">=</span> <span class="n">df_shuffledx</span><span class="p">[</span><span class="n">df_shuffledx</span><span class="p">[</span><span class="s1">'fuelType'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'Diesel'</span><span class="p">][</span><span class="s1">'price'</span><span class="p">]</span>
     <span class="n">t_stat</span><span class="p">,</span> <span class="n">p_value</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">diesel_cars</span><span class="p">,</span> <span class="n">petrol_cars</span><span class="p">)</span>
-    <span class="c1"># print("T-Statistic:", t_stat)</span>
-    <span class="c1"># print("P-Value:", f'{p_value:.70f}')</span>
     <span class="n">p_values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">p_value</span><span class="si">:</span><span class="s1">.10f</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
     <span class="n">t_tests</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">t_stat</span><span class="p">)</span>
 
@@ -10000,8 +9970,6 @@ Letzte Iteration P-Wert: 0.002980494529630013
 
     <span class="n">automatic_cars</span> <span class="o">=</span> <span class="n">df_shuffledx</span><span class="p">[</span><span class="n">df_shuffledx</span><span class="p">[</span><span class="s1">'transmission'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'Automatic'</span><span class="p">][</span><span class="s1">'tax'</span><span class="p">]</span>
     <span class="n">t_stat</span><span class="p">,</span> <span class="n">p_value</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">automatic_cars</span><span class="p">,</span> <span class="n">manual_cars</span><span class="p">)</span>
-    <span class="c1"># print("T-Statistic:", t_stat)</span>
-    <span class="c1"># print("P-Value:", f'{p_value:.70f}')</span>
     <span class="n">p_values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">p_value</span><span class="si">:</span><span class="s1">.10f</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
     <span class="n">t_tests</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">t_stat</span><span class="p">)</span>
 
@@ -10053,12 +10021,12 @@ Letzte Iteration P-Wert: 0.013263170236456663
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Ergebnisse"><strong>Ergebnisse</strong><a class="anchor-link" href="#Ergebnisse">¶</a></h3><p>Signifikanznivau: 0.01</p>
-<p>Hypothesen 1:
-In diesem hypothese die Durchschnittlicher P-Werte sind 0.00092 und das ist weniger als unser signifikanznivau und die Werte von T-test ist 4.50, deswegen sagen wir dieses hypothese stimmt.</p>
-<p>Hypothesen 2:
-In diesem hypothese die Durchscnittlicher P-Werte sind 0.0010 und das ist weniger als unser signifikanznivau und die Werte von T-test ist 4.20, deswegen sagen wir dieses hypothese stimmt.</p>
-<p>Hypothesen 3:
-In diesem hypothese die Durchschnittlicher P-Werte sind 0.0076 und das ist weniger als unser signifikanznivau und die Werte von T-test ist 3.86, deswegen sagen wir diese hypothese stimmt.</p>
+<p>Hypothese 1:
+In diesem Hypothese sind die durchschnittlicher P-Werte 0.00092 und das ist weniger als unsere Signifikanzniveau und die Werte von T-tests sind 4.50, deswegen können wir sagen, dass diese Hypothese stimmt.</p>
+<p>Hypothese 2:
+In diesem Hypothese sind die durchscnittlicher P-Werte 0.0010 und das ist weniger als unsere Signifikanzniveau und die Werte von T-tests sind 4.20, deswegen können wir sagen, dass diese Hypothese stimmt.</p>
+<p>Hypothese 3:
+In diesem Hypothese sind die durchschnittlicher P-Werte 0.0076 und das ist weniger als unsere Signifikanzniveau und die Werte von T-tests sind 3.86, deswegen können wir sagen, dass diese Hypothese stimmt.</p>
 </div>
 </div>
 </div>
@@ -10533,7 +10501,7 @@ memory usage: 1.8 MB
 <li>Logarithmische Transformation</li>
 <li>Normalisierung durch Teilung durch einen konstanten Faktor - einfacher linearer Ansat</li>
 </ul>
-<p><strong>Die Ergebnisse der logarithmischen Transformation sind die besten.</strong></p>
+<p><strong>Die Ergebnisse der logarithmischen Transformation sind am Besten.</strong></p>
 </div>
 </div>
 </div>
@@ -10602,7 +10570,6 @@ memory usage: 1.8 MB
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>(34338, 212)
-(34338, 212)
 (34338, 212)
 (34338, 212)
 (34338, 212)
@@ -10728,8 +10695,6 @@ Number of rows in test data = 8585
 
     <span class="c1"># Vorhersage anhand der unabhängigen Variablen</span>
     <span class="n">pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">predictors</span><span class="p">)</span>
-    <span class="c1"># pred_df=pd.DataFrame({'Actual Value':y_train,'Predicted Value':pred,'Difference':y_train-pred})</span>
-    <span class="c1"># pred_df.to_csv('prediction.csv')</span>
     <span class="n">r2</span> <span class="o">=</span> <span class="n">r2_score</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">pred</span><span class="p">)</span>  <span class="c1"># to compute R-squared</span>
     <span class="n">adjr2</span> <span class="o">=</span> <span class="n">adj_r2_score</span><span class="p">(</span><span class="n">predictors</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">pred</span><span class="p">)</span>  <span class="c1"># Berechnung des adjusted R-Quadrats</span>
     <span class="n">rmse</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">pred</span><span class="p">))</span>  <span class="c1"># Berechnung von RMSE</span>
