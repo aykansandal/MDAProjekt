@@ -10876,24 +10876,22 @@ Test Leistung bei Skalierung mit konstantem Faktor
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span>
 <span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">Pipeline</span>
 
-<span class="c1"># Load your data here (replace with the path to your dataset)</span>
+
 <span class="n">df2</span> <span class="o">=</span> <span class="n">df2</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">df2</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-<span class="c1"># ['brand', 'model', 'price', 'year', 'transmission', 'fuelConsumption', 'tax', 'mileage', 'fuelType', 'color', 'age']</span>
 
-<span class="c1"># Preprocess the data</span>
-<span class="c1"># Replace 'categorical_columns' with the list of your categorical columns</span>
+<span class="c1"># Kategorische und numerische Features auswählen</span>
 <span class="n">categorical_features</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'brand'</span><span class="p">,</span><span class="s1">'model'</span><span class="p">,</span><span class="s1">'transmission'</span><span class="p">,</span><span class="s1">'color'</span><span class="p">,</span><span class="s1">'fuelType'</span><span class="p">]</span>
 <span class="n">numerical_features</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'year'</span><span class="p">,</span><span class="s1">'tax'</span><span class="p">,</span><span class="s1">'fuelConsumption'</span><span class="p">,</span><span class="s1">'age'</span><span class="p">]</span>
 
-<span class="c1"># Split the data into features and target</span>
+<span class="c1"># Aufteilen der Daten in X und y</span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">'price'</span> <span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">'price'</span><span class="p">]</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
-<span class="c1"># Split data into training and testing sets</span>
+<span class="c1"># Aufteilen der Daten in Trainings- und Testdaten</span>
 <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 
-<span class="c1"># Create a column transformer for preprocessing</span>
+<span class="c1"># Preprocessing der Daten</span>
 <span class="n">preprocessor</span> <span class="o">=</span> <span class="n">ColumnTransformer</span><span class="p">(</span>
     <span class="n">transformers</span><span class="o">=</span><span class="p">[</span>
         <span class="p">(</span><span class="s1">'num'</span><span class="p">,</span> <span class="n">StandardScaler</span><span class="p">(),</span> <span class="n">numerical_features</span><span class="p">),</span>
@@ -10996,7 +10994,7 @@ R^2 Score: 0.9312553298386542
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Entscheidungsbäume ohne Hyperparametrisierung</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Entscheidungsbäume ohne Hyperparameteroptimierung </span>
 
 <span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeRegressor</span>
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
@@ -11069,7 +11067,7 @@ Adjusted R-squared: 0.9028238254621282
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Entscheidungsbäume mit Hyperparametrisierung</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Entscheidungsbäume mit Hyperparameteroptimierung</span>
 <span class="c1"># Durch Optimierung der Parameter und Fine-tuning konnten wir die Accuracy score von 90,48 % auf 91,42 % steigern :)</span>
 <span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeRegressor</span>
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">GridSearchCV</span><span class="p">,</span> <span class="n">train_test_split</span>
