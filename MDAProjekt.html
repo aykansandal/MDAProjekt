@@ -7720,7 +7720,7 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p><strong>6.Gibt es Ausreißer, Duplikate oder fehlende Werte?</strong></p>
 <ul>
-<li><p>Ausreißer sind Werte, die deutlich von der Mehrheit abweichen. Wir identifizierten und behandelten die Ausreißer in unserem Datensatz mithilfe des z-Scores.</p>
+<li><p>Ja, wir identifizierten und behandelten die Ausreißer in unserem Datensatz mithilfe des z-Scores.</p>
 </li>
 <li><p>Um doppelte Zeilen zu entfernen und sicherzustellen, dass es keine doppelten Zeilen gibt, haben wir die Methode <strong>Pandas dataframe.drop_duplicates()</strong> verwendet.</p>
 </li>
@@ -7738,7 +7738,7 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p><strong>7.Gibt es Fehler im Datensatz?</strong></p>
-<p>Bei der Formatierung und Konvertierung der Daten mit der Methode replace() für Strings haben wir auch auf Fehler und Inkonsistenzen geprüft. Dank der ordnungsgemäß konfigurierten Website sind wir nicht auf falsche Daten getroffen.</p>
+<p>Ja, bei der Formatierung und Konvertierung der Daten mit der Methode replace() für Strings haben wir auch auf Fehler und Inkonsistenzen geprüft. Dank der ordnungsgemäß konfigurierten Website sind wir nicht auf falsche Daten getroffen.</p>
 </div>
 </div>
 </div>
@@ -9052,6 +9052,292 @@ median  16999.0  2020.0             51.4  180.0  25001.5
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s2">"price"</span><span class="p">)</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>brand</th>
+<th>model</th>
+<th>price</th>
+<th>year</th>
+<th>transmission</th>
+<th>fuelConsumption</th>
+<th>tax</th>
+<th>mileage</th>
+<th>fuelType</th>
+<th>color</th>
+<th>variant</th>
+<th>age</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>18548</th>
+<td>Volvo</td>
+<td>XC90</td>
+<td>51280</td>
+<td>2021.0</td>
+<td>Semi-Auto</td>
+<td>100.9</td>
+<td>170.0</td>
+<td>10399.0</td>
+<td>Hybrid</td>
+<td>grey</td>
+<td>2.0 T8 Recharge PHEV R DESIGN Pro 5dr AWD Auto</td>
+<td>3.0</td>
+</tr>
+<tr>
+<th>8672</th>
+<td>Volvo</td>
+<td>XC60</td>
+<td>51370</td>
+<td>2023.0</td>
+<td>Semi-Auto</td>
+<td>35.8</td>
+<td>170.0</td>
+<td>10497.0</td>
+<td>Hybrid</td>
+<td>blue</td>
+<td>2.0 B5P Ultimate Dark 5dr AWD Geartronic</td>
+<td>1.0</td>
+</tr>
+<tr>
+<th>2558</th>
+<td>Volvo</td>
+<td>XC60</td>
+<td>51370</td>
+<td>2023.0</td>
+<td>Semi-Auto</td>
+<td>35.8</td>
+<td>170.0</td>
+<td>6119.0</td>
+<td>Hybrid</td>
+<td>black</td>
+<td>2.0 B5P Ultimate Dark 5dr AWD Geartronic</td>
+<td>1.0</td>
+</tr>
+<tr>
+<th>28529</th>
+<td>Audi</td>
+<td>A8</td>
+<td>51400</td>
+<td>2022.0</td>
+<td>Semi-Auto</td>
+<td>38.7</td>
+<td>165.0</td>
+<td>10439.0</td>
+<td>Diesel</td>
+<td>silver</td>
+<td>L 50 TDI Quattro S Line 4dr Tiptronic</td>
+<td>2.0</td>
+</tr>
+<tr>
+<th>27386</th>
+<td>Volvo</td>
+<td>XC90</td>
+<td>51490</td>
+<td>2022.0</td>
+<td>Semi-Auto</td>
+<td>100.9</td>
+<td>170.0</td>
+<td>9674.0</td>
+<td>Hybrid</td>
+<td>silver</td>
+<td>2.0 T8 Recharge PHEV R DESIGN 5dr AWD Auto</td>
+<td>2.0</td>
+</tr>
+<tr>
+<th>5563</th>
+<td>BMW</td>
+<td>X6</td>
+<td>51490</td>
+<td>2022.0</td>
+<td>Automatic</td>
+<td>38.7</td>
+<td>170.0</td>
+<td>14309.0</td>
+<td>Diesel</td>
+<td>black</td>
+<td>xDrive30d MHT M Sport 5dr Step Auto</td>
+<td>2.0</td>
+</tr>
+<tr>
+<th>7202</th>
+<td>BMW</td>
+<td>X5</td>
+<td>51500</td>
+<td>2022.0</td>
+<td>Semi-Auto</td>
+<td>28.0</td>
+<td>170.0</td>
+<td>12723.0</td>
+<td>Hybrid</td>
+<td>black</td>
+<td>5 xDrive40i MHT M Sport 5dr Auto</td>
+<td>2.0</td>
+</tr>
+<tr>
+<th>31227</th>
+<td>Volvo</td>
+<td>XC90</td>
+<td>51500</td>
+<td>2023.0</td>
+<td>Semi-Auto</td>
+<td>39.8</td>
+<td>170.0</td>
+<td>6400.0</td>
+<td>Diesel</td>
+<td>silver</td>
+<td>2.0 B5D [235] Plus Dark 5dr AWD Geartronic</td>
+<td>1.0</td>
+</tr>
+<tr>
+<th>9523</th>
+<td>BMW</td>
+<td>X5</td>
+<td>51500</td>
+<td>2021.0</td>
+<td>Automatic</td>
+<td>34.9</td>
+<td>170.0</td>
+<td>24600.0</td>
+<td>Hybrid</td>
+<td>blue</td>
+<td>3.0 40d MHT M Sport Auto xDrive Euro 6 (s/s) 5...</td>
+<td>3.0</td>
+</tr>
+<tr>
+<th>28144</th>
+<td>Volvo</td>
+<td>XC90</td>
+<td>51540</td>
+<td>2023.0</td>
+<td>Semi-Auto</td>
+<td>39.8</td>
+<td>170.0</td>
+<td>12938.0</td>
+<td>Diesel</td>
+<td>silver</td>
+<td>2.0 B5D [235] Plus Dark 5dr AWD Geartronic</td>
+<td>1.0</td>
+</tr>
+<tr>
+<th>29180</th>
+<td>Audi</td>
+<td>Q8</td>
+<td>51600</td>
+<td>2020.0</td>
+<td>Semi-Auto</td>
+<td>26.4</td>
+<td>170.0</td>
+<td>28643.0</td>
+<td>Petrol</td>
+<td>silver</td>
+<td>55 TFSI Quattro S Line 5dr Tiptronic</td>
+<td>4.0</td>
+</tr>
+<tr>
+<th>28253</th>
+<td>Audi</td>
+<td>Q8</td>
+<td>51600</td>
+<td>2020.0</td>
+<td>Semi-Auto</td>
+<td>26.4</td>
+<td>170.0</td>
+<td>28643.0</td>
+<td>Petrol</td>
+<td>silver</td>
+<td>55 TFSI Quattro S Line 5dr Tiptronic</td>
+<td>4.0</td>
+</tr>
+<tr>
+<th>29078</th>
+<td>Audi</td>
+<td>Q8</td>
+<td>51600</td>
+<td>2020.0</td>
+<td>Semi-Auto</td>
+<td>26.4</td>
+<td>170.0</td>
+<td>28643.0</td>
+<td>Petrol</td>
+<td>silver</td>
+<td>55 TFSI Quattro S Line 5dr Tiptronic</td>
+<td>4.0</td>
+</tr>
+<tr>
+<th>29448</th>
+<td>Audi</td>
+<td>Q8</td>
+<td>51600</td>
+<td>2020.0</td>
+<td>Semi-Auto</td>
+<td>26.4</td>
+<td>170.0</td>
+<td>28643.0</td>
+<td>Petrol</td>
+<td>silver</td>
+<td>55 TFSI Quattro S Line 5dr Tiptronic</td>
+<td>4.0</td>
+</tr>
+<tr>
+<th>27211</th>
+<td>Audi</td>
+<td>Q8</td>
+<td>51600</td>
+<td>2020.0</td>
+<td>Semi-Auto</td>
+<td>26.4</td>
+<td>170.0</td>
+<td>28643.0</td>
+<td>Petrol</td>
+<td>silver</td>
+<td>55 TFSI Quattro S Line 5dr Tiptronic</td>
+<td>4.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
 <span class="c1"># Numerische Spalten auswählen</span>
@@ -10050,11 +10336,7 @@ In diesem Hypothese sind die durchschnittlicher P-Werte 0.0076 und das ist wenig
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="p">(</span>
-    <span class="n">mean_absolute_error</span><span class="p">,</span>
-    <span class="n">mean_squared_error</span><span class="p">,</span>
-    <span class="n">r2_score</span><span class="p">,</span>
-<span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="p">(</span> <span class="n">mean_absolute_error</span><span class="p">,</span> <span class="n">mean_squared_error</span><span class="p">,</span> <span class="n">r2_score</span><span class="p">)</span>
 
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
 </pre></div>
@@ -10071,9 +10353,6 @@ In diesem Hypothese sind die durchschnittlicher P-Werte 0.0076 und das ist wenig
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df2</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">list_str_obj_cols</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">df2</span><span class="o">.</span><span class="n">dtypes</span> <span class="o">==</span> <span class="s2">"object"</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
-<span class="k">for</span> <span class="n">str_obj_col</span> <span class="ow">in</span> <span class="n">list_str_obj_cols</span><span class="p">:</span>
-    <span class="n">df2</span><span class="p">[</span><span class="n">str_obj_col</span><span class="p">]</span> <span class="o">=</span> <span class="n">df2</span><span class="p">[</span><span class="n">str_obj_col</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">"category"</span><span class="p">)</span>
 <span class="n">df2</span><span class="p">[</span><span class="s1">'year'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df2</span><span class="p">[</span><span class="s1">'year'</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">"category"</span><span class="p">)</span>
 <span class="n">df2</span> <span class="o">=</span> <span class="n">df2</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">'variant'</span><span class="p">])</span>
 </pre></div>
@@ -10081,7 +10360,7 @@ In diesem Hypothese sind die durchschnittlicher P-Werte 0.0076 und das ist wenig
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -10091,35 +10370,9 @@ In diesem Hypothese sind die durchschnittlicher P-Werte 0.0076 und das ist wenig
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df2</span><span class="p">[</span><span class="s1">'year'</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="mf">2019.0133581606217</span><span class="p">,</span><span class="mi">2019</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">df2</span><span class="p">[</span><span class="s1">'year'</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+
+<span class="n">df2</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">'age'</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>2020.0    6847
-2019.0    5914
-2021.0    4550
-2023.0    3706
-2022.0    3450
-2018.0    3393
-2017.0    2490
-2016.0     943
-2015.0     802
-2014.0     676
-2013.0     545
-2012.0     410
-2011.0     270
-2010.0     219
-2009.0     205
-2024.0       2
-Name: year, dtype: int64</pre>
 </div>
 </div>
 </div>
@@ -10146,294 +10399,24 @@ Name: year, dtype: int64</pre>
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>&lt;class 'pandas.core.frame.DataFrame'&gt;
-Int64Index: 34422 entries, 0 to 37146
+Int64Index: 34338 entries, 0 to 37146
 Data columns (total 11 columns):
  #   Column           Non-Null Count  Dtype   
 ---  ------           --------------  -----   
- 0   brand            34422 non-null  category
- 1   model            34422 non-null  category
- 2   price            34422 non-null  int64   
- 3   year             34422 non-null  category
- 4   transmission     34422 non-null  category
- 5   fuelConsumption  34422 non-null  float64 
- 6   tax              34422 non-null  float64 
- 7   mileage          34422 non-null  float64 
- 8   fuelType         34422 non-null  category
- 9   color            34422 non-null  category
+ 0   brand            34338 non-null  object  
+ 1   model            34338 non-null  object  
+ 2   price            34338 non-null  int64   
+ 3   year             34338 non-null  category
+ 4   transmission     34338 non-null  object  
+ 5   fuelConsumption  34338 non-null  float64 
+ 6   tax              34338 non-null  float64 
+ 7   mileage          34338 non-null  float64 
+ 8   fuelType         34338 non-null  object  
+ 9   color            34338 non-null  object  
  10  age              34338 non-null  float64 
-dtypes: category(6), float64(4), int64(1)
-memory usage: 1.8 MB
+dtypes: category(1), float64(4), int64(1), object(5)
+memory usage: 2.9+ MB
 </pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">df2</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s2">"price"</span><span class="p">)</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>brand</th>
-<th>model</th>
-<th>price</th>
-<th>year</th>
-<th>transmission</th>
-<th>fuelConsumption</th>
-<th>tax</th>
-<th>mileage</th>
-<th>fuelType</th>
-<th>color</th>
-<th>age</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>18548</th>
-<td>Volvo</td>
-<td>XC90</td>
-<td>51280</td>
-<td>2021.0</td>
-<td>Semi-Auto</td>
-<td>100.9</td>
-<td>170.0</td>
-<td>10399.0</td>
-<td>Hybrid</td>
-<td>grey</td>
-<td>3.0</td>
-</tr>
-<tr>
-<th>8672</th>
-<td>Volvo</td>
-<td>XC60</td>
-<td>51370</td>
-<td>2023.0</td>
-<td>Semi-Auto</td>
-<td>35.8</td>
-<td>170.0</td>
-<td>10497.0</td>
-<td>Hybrid</td>
-<td>blue</td>
-<td>1.0</td>
-</tr>
-<tr>
-<th>2558</th>
-<td>Volvo</td>
-<td>XC60</td>
-<td>51370</td>
-<td>2023.0</td>
-<td>Semi-Auto</td>
-<td>35.8</td>
-<td>170.0</td>
-<td>6119.0</td>
-<td>Hybrid</td>
-<td>black</td>
-<td>1.0</td>
-</tr>
-<tr>
-<th>28529</th>
-<td>Audi</td>
-<td>A8</td>
-<td>51400</td>
-<td>2022.0</td>
-<td>Semi-Auto</td>
-<td>38.7</td>
-<td>165.0</td>
-<td>10439.0</td>
-<td>Diesel</td>
-<td>silver</td>
-<td>2.0</td>
-</tr>
-<tr>
-<th>27386</th>
-<td>Volvo</td>
-<td>XC90</td>
-<td>51490</td>
-<td>2022.0</td>
-<td>Semi-Auto</td>
-<td>100.9</td>
-<td>170.0</td>
-<td>9674.0</td>
-<td>Hybrid</td>
-<td>silver</td>
-<td>2.0</td>
-</tr>
-<tr>
-<th>5563</th>
-<td>BMW</td>
-<td>X6</td>
-<td>51490</td>
-<td>2022.0</td>
-<td>Automatic</td>
-<td>38.7</td>
-<td>170.0</td>
-<td>14309.0</td>
-<td>Diesel</td>
-<td>black</td>
-<td>2.0</td>
-</tr>
-<tr>
-<th>7202</th>
-<td>BMW</td>
-<td>X5</td>
-<td>51500</td>
-<td>2022.0</td>
-<td>Semi-Auto</td>
-<td>28.0</td>
-<td>170.0</td>
-<td>12723.0</td>
-<td>Hybrid</td>
-<td>black</td>
-<td>2.0</td>
-</tr>
-<tr>
-<th>31227</th>
-<td>Volvo</td>
-<td>XC90</td>
-<td>51500</td>
-<td>2023.0</td>
-<td>Semi-Auto</td>
-<td>39.8</td>
-<td>170.0</td>
-<td>6400.0</td>
-<td>Diesel</td>
-<td>silver</td>
-<td>1.0</td>
-</tr>
-<tr>
-<th>9523</th>
-<td>BMW</td>
-<td>X5</td>
-<td>51500</td>
-<td>2021.0</td>
-<td>Automatic</td>
-<td>34.9</td>
-<td>170.0</td>
-<td>24600.0</td>
-<td>Hybrid</td>
-<td>blue</td>
-<td>3.0</td>
-</tr>
-<tr>
-<th>28144</th>
-<td>Volvo</td>
-<td>XC90</td>
-<td>51540</td>
-<td>2023.0</td>
-<td>Semi-Auto</td>
-<td>39.8</td>
-<td>170.0</td>
-<td>12938.0</td>
-<td>Diesel</td>
-<td>silver</td>
-<td>1.0</td>
-</tr>
-<tr>
-<th>29180</th>
-<td>Audi</td>
-<td>Q8</td>
-<td>51600</td>
-<td>2020.0</td>
-<td>Semi-Auto</td>
-<td>26.4</td>
-<td>170.0</td>
-<td>28643.0</td>
-<td>Petrol</td>
-<td>silver</td>
-<td>4.0</td>
-</tr>
-<tr>
-<th>28253</th>
-<td>Audi</td>
-<td>Q8</td>
-<td>51600</td>
-<td>2020.0</td>
-<td>Semi-Auto</td>
-<td>26.4</td>
-<td>170.0</td>
-<td>28643.0</td>
-<td>Petrol</td>
-<td>silver</td>
-<td>4.0</td>
-</tr>
-<tr>
-<th>29078</th>
-<td>Audi</td>
-<td>Q8</td>
-<td>51600</td>
-<td>2020.0</td>
-<td>Semi-Auto</td>
-<td>26.4</td>
-<td>170.0</td>
-<td>28643.0</td>
-<td>Petrol</td>
-<td>silver</td>
-<td>4.0</td>
-</tr>
-<tr>
-<th>29448</th>
-<td>Audi</td>
-<td>Q8</td>
-<td>51600</td>
-<td>2020.0</td>
-<td>Semi-Auto</td>
-<td>26.4</td>
-<td>170.0</td>
-<td>28643.0</td>
-<td>Petrol</td>
-<td>silver</td>
-<td>4.0</td>
-</tr>
-<tr>
-<th>27211</th>
-<td>Audi</td>
-<td>Q8</td>
-<td>51600</td>
-<td>2020.0</td>
-<td>Semi-Auto</td>
-<td>26.4</td>
-<td>170.0</td>
-<td>28643.0</td>
-<td>Petrol</td>
-<td>silver</td>
-<td>4.0</td>
-</tr>
-</tbody>
-</table>
-</div>
 </div>
 </div>
 </div>
@@ -10456,20 +10439,6 @@ memory usage: 1.8 MB
 <span class="n">df_sqrt</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span>    <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">df_sqrt</span><span class="p">[</span><span class="s2">"price"</span><span class="p">])</span>
 <span class="n">df_log</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span>     <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">df_log</span><span class="p">[</span><span class="s2">"price"</span><span class="p">])</span>
 <span class="n">df_lin</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span>     <span class="o">=</span> <span class="n">df_lin</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span> <span class="o">/</span> <span class="mi">10000</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">numerical_col</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'price'</span><span class="p">,</span> <span class="s1">'fuelConsumption'</span><span class="p">,</span> <span class="s1">'tax'</span><span class="p">,</span> <span class="s1">'mileage'</span><span class="p">,</span> <span class="s1">'age'</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -10514,23 +10483,18 @@ memory usage: 1.8 MB
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_box</span> <span class="o">=</span> <span class="n">df_box</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">frac</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">df_box</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">'age'</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">X_box</span> <span class="o">=</span> <span class="n">df_box</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s2">"price"</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">Y_box</span> <span class="o">=</span> <span class="n">df_box</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span>
 
-
 <span class="n">df_sqrt</span> <span class="o">=</span> <span class="n">df_sqrt</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">frac</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">df_sqrt</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">'age'</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">X_sqrt</span> <span class="o">=</span> <span class="n">df_sqrt</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s2">"price"</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">Y_sqrt</span> <span class="o">=</span> <span class="n">df_sqrt</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span>
 
 <span class="n">df_log</span> <span class="o">=</span> <span class="n">df_log</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">frac</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">df_log</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">'age'</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">X_log</span> <span class="o">=</span> <span class="n">df_log</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s2">"price"</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">Y_log</span> <span class="o">=</span> <span class="n">df_log</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span>
 
 <span class="n">df_lin</span> <span class="o">=</span> <span class="n">df_lin</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">frac</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">df_lin</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">'age'</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">X_lin</span> <span class="o">=</span> <span class="n">df_lin</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s2">"price"</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">Y_lin</span> <span class="o">=</span> <span class="n">df_lin</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span>
 </pre></div>
@@ -10587,20 +10551,20 @@ memory usage: 1.8 MB
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">X_train_box</span><span class="p">,</span> <span class="n">X_test_box</span><span class="p">,</span> <span class="n">y_train_box</span><span class="p">,</span> <span class="n">y_test_box</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X_box</span><span class="p">,</span><span class="n">Y_box</span><span class="p">,</span><span class="n">test_size</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Number of rows in train data ="</span><span class="p">,</span> <span class="n">X_train_box</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Number of rows in test data ="</span><span class="p">,</span> <span class="n">X_test_box</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Anzahl der Zeilen in Trainingsdaten:"</span><span class="p">,</span> <span class="n">X_train_box</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Anzahl der Zeilen in Testdaten:"</span><span class="p">,</span> <span class="n">X_test_box</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 
 <span class="n">X_train_sqrt</span><span class="p">,</span> <span class="n">X_test_sqrt</span><span class="p">,</span> <span class="n">y_train_sqrt</span><span class="p">,</span> <span class="n">y_test_sqrt</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X_sqrt</span><span class="p">,</span><span class="n">Y_sqrt</span><span class="p">,</span><span class="n">test_size</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Number of rows in train data ="</span><span class="p">,</span> <span class="n">X_train_sqrt</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Number of rows in test data ="</span><span class="p">,</span> <span class="n">X_test_sqrt</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Anzahl der Zeilen in Trainingsdaten:"</span><span class="p">,</span> <span class="n">X_train_sqrt</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Anzahl der Zeilen in Testdaten:"</span><span class="p">,</span> <span class="n">X_test_sqrt</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 
 <span class="n">X_train_log</span><span class="p">,</span> <span class="n">X_test_log</span><span class="p">,</span> <span class="n">y_train_log</span><span class="p">,</span> <span class="n">y_test_log</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X_log</span><span class="p">,</span><span class="n">Y_log</span><span class="p">,</span><span class="n">test_size</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Number of rows in train data ="</span><span class="p">,</span> <span class="n">X_train_log</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Number of rows in test data ="</span><span class="p">,</span> <span class="n">X_test_log</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Anzahl der Zeilen in Trainingsdaten:"</span><span class="p">,</span> <span class="n">X_train_log</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Anzahl der Zeilen in Testdaten:"</span><span class="p">,</span> <span class="n">X_test_log</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 
 <span class="n">X_train_lin</span><span class="p">,</span> <span class="n">X_test_lin</span><span class="p">,</span> <span class="n">y_train_lin</span><span class="p">,</span> <span class="n">y_test_lin</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X_lin</span><span class="p">,</span><span class="n">Y_lin</span><span class="p">,</span><span class="n">test_size</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Number of rows in train data ="</span><span class="p">,</span> <span class="n">X_train_lin</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Number of rows in test data ="</span><span class="p">,</span> <span class="n">X_test_lin</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Anzahl der Zeilen in Trainingsdaten:"</span><span class="p">,</span> <span class="n">X_train_lin</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Anzahl der Zeilen in Testdaten:"</span><span class="p">,</span> <span class="n">X_test_lin</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
@@ -10613,14 +10577,14 @@ memory usage: 1.8 MB
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Number of rows in train data = 25753
-Number of rows in test data = 8585
-Number of rows in train data = 25753
-Number of rows in test data = 8585
-Number of rows in train data = 25753
-Number of rows in test data = 8585
-Number of rows in train data = 25753
-Number of rows in test data = 8585
+<pre>Anzahl der Zeilen in Trainingsdaten: 25753
+Anzahl der Zeilen in Testdaten: 8585
+Anzahl der Zeilen in Trainingsdaten: 25753
+Anzahl der Zeilen in Testdaten: 8585
+Anzahl der Zeilen in Trainingsdaten: 25753
+Anzahl der Zeilen in Testdaten: 8585
+Anzahl der Zeilen in Trainingsdaten: 25753
+Anzahl der Zeilen in Testdaten: 8585
 </pre>
 </div>
 </div>
@@ -10665,7 +10629,7 @@ Number of rows in test data = 8585
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<style>#sk-container-id-1 {color: black;background-color: white;}#sk-container-id-1 pre{padding: 0;}#sk-container-id-1 div.sk-toggleable {background-color: white;}#sk-container-id-1 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-1 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-1 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-1 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-1 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-1 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-1 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-1 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-1 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-1 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-1 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-1 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-1 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-1 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-1 div.sk-item {position: relative;z-index: 1;}#sk-container-id-1 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-1 div.sk-item::before, #sk-container-id-1 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-1 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-1 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-1 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-1 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-1 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-1 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-1 div.sk-label-container {text-align: center;}#sk-container-id-1 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-1 div.sk-text-repr-fallback {display: none;}</style><div class="sk-top-container" id="sk-container-id-1"><div class="sk-text-repr-fallback"><pre>LinearRegression()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br/>On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden=""><div class="sk-item"><div class="sk-estimator sk-toggleable"><input checked="" class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-1" type="checkbox"/><label class="sk-toggleable__label sk-toggleable__label-arrow" for="sk-estimator-id-1">LinearRegression</label><div class="sk-toggleable__content"><pre>LinearRegression()</pre></div></div></div></div></div>
+<style>#sk-container-id-4 {color: black;background-color: white;}#sk-container-id-4 pre{padding: 0;}#sk-container-id-4 div.sk-toggleable {background-color: white;}#sk-container-id-4 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-4 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-4 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-4 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-4 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-4 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-4 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-4 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-4 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-4 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-4 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-4 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-4 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-4 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-4 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-4 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-4 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-4 div.sk-item {position: relative;z-index: 1;}#sk-container-id-4 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-4 div.sk-item::before, #sk-container-id-4 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-4 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-4 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-4 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-4 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-4 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-4 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-4 div.sk-label-container {text-align: center;}#sk-container-id-4 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-4 div.sk-text-repr-fallback {display: none;}</style><div class="sk-top-container" id="sk-container-id-4"><div class="sk-text-repr-fallback"><pre>LinearRegression()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br/>On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden=""><div class="sk-item"><div class="sk-estimator sk-toggleable"><input checked="" class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-4" type="checkbox"/><label class="sk-toggleable__label sk-toggleable__label-arrow" for="sk-estimator-id-4">LinearRegression</label><div class="sk-toggleable__content"><pre>LinearRegression()</pre></div></div></div></div></div>
 </div>
 </div>
 </div>
@@ -10678,42 +10642,33 @@ Number of rows in test data = 8585
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Funktion zur Berechnung von MAPE</span>
-<span class="k">def</span> <span class="nf">mape_score</span><span class="p">(</span><span class="n">targets</span><span class="p">,</span> <span class="n">predictions</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">targets</span> <span class="o">-</span> <span class="n">predictions</span><span class="p">)</span> <span class="o">/</span> <span class="n">targets</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">LinearRegressionStats</span><span class="p">(</span><span class="n">_linearregression</span><span class="p">,</span> <span class="n">_X_train</span><span class="p">,</span> <span class="n">_y_train</span><span class="p">,</span> <span class="n">_X_test</span><span class="p">,</span> <span class="n">_y_test</span><span class="p">):</span>
+    <span class="c1"># Predictions on training data</span>
+    <span class="n">y_train_pred</span> <span class="o">=</span> <span class="n">_linearregression</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">_X_train</span><span class="p">)</span>
 
-<span class="c1"># Funktion zur Berechnung des adjusted R-Quadrats</span>
-<span class="k">def</span> <span class="nf">adj_r2_score</span><span class="p">(</span><span class="n">predictors</span><span class="p">,</span> <span class="n">targets</span><span class="p">,</span> <span class="n">predictions</span><span class="p">):</span>
-    <span class="n">r2</span> <span class="o">=</span> <span class="n">r2_score</span><span class="p">(</span><span class="n">targets</span><span class="p">,</span> <span class="n">predictions</span><span class="p">)</span>
-    <span class="n">n</span> <span class="o">=</span> <span class="n">predictors</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="n">k</span> <span class="o">=</span> <span class="n">predictors</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-    <span class="k">return</span> <span class="mi">1</span> <span class="o">-</span> <span class="p">((</span><span class="mi">1</span> <span class="o">-</span> <span class="n">r2</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="n">k</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="c1"># Predictions on testing data</span>
+    <span class="n">y_test_pred</span> <span class="o">=</span> <span class="n">_linearregression</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">_X_test</span><span class="p">)</span>
 
+    <span class="c1"># Calculating errors for training data</span>
+    <span class="n">mae_train</span> <span class="o">=</span> <span class="n">mean_absolute_error</span><span class="p">(</span><span class="n">_y_train</span><span class="p">,</span> <span class="n">y_train_pred</span><span class="p">)</span>
+    <span class="n">mse_train</span> <span class="o">=</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">_y_train</span><span class="p">,</span> <span class="n">y_train_pred</span><span class="p">)</span>
+    <span class="n">r2_train</span> <span class="o">=</span> <span class="n">r2_score</span><span class="p">(</span><span class="n">_y_train</span><span class="p">,</span> <span class="n">y_train_pred</span><span class="p">)</span>
 
-<span class="c1"># Funktion zur Berechnung verschiedener Metriken zur Prüfung der Leistung eines Regressionsmodells</span>
-<span class="k">def</span> <span class="nf">model_performance_regression</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">predictors</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+    <span class="c1"># Calculating errors for testing data</span>
+    <span class="n">mae_test</span> <span class="o">=</span> <span class="n">mean_absolute_error</span><span class="p">(</span><span class="n">_y_test</span><span class="p">,</span> <span class="n">y_test_pred</span><span class="p">)</span>
+    <span class="n">mse_test</span> <span class="o">=</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">_y_test</span><span class="p">,</span> <span class="n">y_test_pred</span><span class="p">)</span>
+    <span class="n">r2_test</span> <span class="o">=</span> <span class="n">r2_score</span><span class="p">(</span><span class="n">_y_test</span><span class="p">,</span> <span class="n">y_test_pred</span><span class="p">)</span>
 
-    <span class="c1"># Vorhersage anhand der unabhängigen Variablen</span>
-    <span class="n">pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">predictors</span><span class="p">)</span>
-    <span class="n">r2</span> <span class="o">=</span> <span class="n">r2_score</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">pred</span><span class="p">)</span>  <span class="c1"># to compute R-squared</span>
-    <span class="n">adjr2</span> <span class="o">=</span> <span class="n">adj_r2_score</span><span class="p">(</span><span class="n">predictors</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">pred</span><span class="p">)</span>  <span class="c1"># Berechnung des adjusted R-Quadrats</span>
-    <span class="n">rmse</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">pred</span><span class="p">))</span>  <span class="c1"># Berechnung von RMSE</span>
-    <span class="n">mae</span> <span class="o">=</span> <span class="n">mean_absolute_error</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">pred</span><span class="p">)</span>  <span class="c1"># Berechnung von MAE</span>
-    <span class="n">mape</span> <span class="o">=</span> <span class="n">mape_score</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">pred</span><span class="p">)</span>  <span class="c1"># Berechnung von MAPE</span>
+    <span class="c1"># Printing the statistics</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Training Data Metrics:"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Mean Absolute Error: "</span><span class="p">,</span> <span class="n">mae_train</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Mean Squared Error: "</span><span class="p">,</span> <span class="n">mse_train</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"R-squared: "</span><span class="p">,</span> <span class="n">r2_train</span><span class="p">)</span>
 
-    <span class="c1"># Erstellung eines Dataframes mit Metriken</span>
-    <span class="n">df_perf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
-        <span class="p">{</span>
-            <span class="s2">"RMSE"</span><span class="p">:</span> <span class="n">rmse</span><span class="p">,</span>
-            <span class="s2">"MAE"</span><span class="p">:</span> <span class="n">mae</span><span class="p">,</span>
-            <span class="s2">"R-squared"</span><span class="p">:</span> <span class="n">r2</span><span class="p">,</span>
-            <span class="s2">"Adj. R-squared"</span><span class="p">:</span> <span class="n">adjr2</span><span class="p">,</span>
-            <span class="s2">"MAPE"</span><span class="p">:</span> <span class="n">mape</span><span class="p">,</span>
-        <span class="p">},</span>
-        <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
-    <span class="p">)</span>
-
-    <span class="k">return</span> <span class="n">df_perf</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Testing Data Metrics:"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Mean Absolute Error: "</span><span class="p">,</span> <span class="n">mae_test</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Mean Squared Error: "</span><span class="p">,</span> <span class="n">mse_test</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"R-squared: "</span><span class="p">,</span> <span class="n">r2_test</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -10727,21 +10682,7 @@ Number of rows in test data = 8585
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Trainingsleistung mit BOXCOX Transformation</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="n">linearregression_train_perf_box</span> <span class="o">=</span> <span class="n">model_performance_regression</span><span class="p">(</span><span class="n">linearregression_box</span><span class="p">,</span> <span class="n">X_train_box</span><span class="p">,</span> <span class="n">y_train_box</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">linearregression_train_perf_box</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Trainingsleistung mit SQRT Transformation</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="n">linearregression_train_perf_sqrt</span> <span class="o">=</span> <span class="n">model_performance_regression</span><span class="p">(</span><span class="n">linearregression_sqrt</span><span class="p">,</span> <span class="n">X_train_sqrt</span><span class="p">,</span> <span class="n">y_train_sqrt</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">linearregression_train_perf_sqrt</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Trainingsleistung mit logarithmische Transformation</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="n">linearregression_train_perf_log</span> <span class="o">=</span> <span class="n">model_performance_regression</span><span class="p">(</span><span class="n">linearregression_log</span><span class="p">,</span> <span class="n">X_train_log</span><span class="p">,</span> <span class="n">y_train_log</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">linearregression_train_perf_log</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Trainingsleistung bei Skalierung mit konstantem Faktor</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="n">linearregression_train_perf_lin</span> <span class="o">=</span> <span class="n">model_performance_regression</span><span class="p">(</span><span class="n">linearregression_lin</span><span class="p">,</span> <span class="n">X_train_lin</span><span class="p">,</span> <span class="n">y_train_lin</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">linearregression_train_perf_lin</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">LinearRegressionStats</span><span class="p">(</span><span class="n">linearregression_box</span> <span class="p">,</span><span class="n">X_train_box</span><span class="p">,</span> <span class="n">y_train_box</span><span class="p">,</span> <span class="n">X_test_box</span><span class="p">,</span> <span class="n">y_test_box</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -10754,26 +10695,15 @@ Number of rows in test data = 8585
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Trainingsleistung mit BOXCOX Transformation
+<pre>Training Data Metrics:
+Mean Absolute Error:  2.140294086290445
+Mean Squared Error:  7.917864256274794
+R-squared:  0.9328917336329434
 
-       RMSE       MAE  R-squared  Adj. R-squared      MAPE
-0  2.790788  2.111182    0.93289        0.932333  3.153169 
-
-Trainingsleistung mit SQRT Transformation
-
-       RMSE       MAE  R-squared  Adj. R-squared      MAPE
-0  8.550937  6.405696   0.926161        0.925548  4.904577 
-
-Trainingsleistung mit logarithmische Transformation
-
-      RMSE       MAE  R-squared  Adj. R-squared      MAPE
-0  0.12209  0.092883   0.938824        0.938316  0.959411 
-
-Trainingsleistung bei Skalierung mit konstantem Faktor
-
-       RMSE       MAE  R-squared  Adj. R-squared       MAPE
-0  0.280526  0.202819   0.898121        0.897275  12.397182 
-
+Testing Data Metrics:
+Mean Absolute Error:  2.1861910268065077
+Mean Squared Error:  8.379930025626601
+R-squared:  0.9287600531693007
 </pre>
 </div>
 </div>
@@ -10787,29 +10717,7 @@ Trainingsleistung bei Skalierung mit konstantem Faktor
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Test Leistung mit BOXCOX Transformation</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="n">linearregression_test_perf_box</span> <span class="o">=</span> <span class="n">model_performance_regression</span><span class="p">(</span>
-    <span class="n">linearregression_box</span><span class="p">,</span> <span class="n">X_test_box</span><span class="p">,</span> <span class="n">y_test_box</span>
-<span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">linearregression_test_perf_box</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Test Leistung mit SQRT Transformation</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="n">linearregression_test_perf_sqrt</span> <span class="o">=</span> <span class="n">model_performance_regression</span><span class="p">(</span>
-    <span class="n">linearregression_sqrt</span><span class="p">,</span> <span class="n">X_test_sqrt</span><span class="p">,</span> <span class="n">y_test_sqrt</span>
-<span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">linearregression_test_perf_sqrt</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Test Leistung mit logarithmische Transformation</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="n">linearregression_test_perf_log</span> <span class="o">=</span> <span class="n">model_performance_regression</span><span class="p">(</span>
-    <span class="n">linearregression_log</span><span class="p">,</span> <span class="n">X_test_log</span><span class="p">,</span> <span class="n">y_test_log</span>
-<span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">linearregression_test_perf_log</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Test Leistung bei Skalierung mit konstantem Faktor</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="n">linearregression_test_perf_lin</span> <span class="o">=</span> <span class="n">model_performance_regression</span><span class="p">(</span>
-    <span class="n">linearregression_lin</span><span class="p">,</span> <span class="n">X_test_lin</span><span class="p">,</span> <span class="n">y_test_lin</span>
-<span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">linearregression_test_perf_lin</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">LinearRegressionStats</span><span class="p">(</span><span class="n">linearregression_sqrt</span> <span class="p">,</span><span class="n">X_train_sqrt</span><span class="p">,</span> <span class="n">y_train_sqrt</span><span class="p">,</span> <span class="n">X_test_sqrt</span><span class="p">,</span> <span class="n">y_test_sqrt</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -10822,26 +10730,85 @@ Trainingsleistung bei Skalierung mit konstantem Faktor
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Test Leistung mit BOXCOX Transformation
+<pre>Training Data Metrics:
+Mean Absolute Error:  6.412079638262012
+Mean Squared Error:  72.33518935321051
+R-squared:  0.9264363329121512
 
-       RMSE       MAE  R-squared  Adj. R-squared      MAPE
-0  2.828538  2.169546   0.928943        0.927143  3.239993 
+Testing Data Metrics:
+Mean Absolute Error:  6.549703602062243
+Mean Squared Error:  76.86850900176626
+R-squared:  0.9216441320849346
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">LinearRegressionStats</span><span class="p">(</span><span class="n">linearregression_log</span><span class="p">,</span> <span class="n">X_train_log</span><span class="p">,</span> <span class="n">y_train_log</span><span class="p">,</span> <span class="n">X_test_log</span><span class="p">,</span> <span class="n">y_test_log</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Training Data Metrics:
+Mean Absolute Error:  0.0931317650831664
+Mean Squared Error:  0.014946799307870899
+R-squared:  0.9382743126816387
 
-Test Leistung mit SQRT Transformation
+Testing Data Metrics:
+Mean Absolute Error:  0.09463899232285236
+Mean Squared Error:  0.015614398275678188
+R-squared:  0.9351480479832814
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">LinearRegressionStats</span><span class="p">(</span><span class="n">linearregression_lin</span><span class="p">,</span> <span class="n">X_train_lin</span><span class="p">,</span> <span class="n">y_train_lin</span><span class="p">,</span> <span class="n">X_test_lin</span><span class="p">,</span> <span class="n">y_test_lin</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Training Data Metrics:
+Mean Absolute Error:  0.20242016953718853
+Mean Squared Error:  0.07749811832596781
+R-squared:  0.8988147084827619
 
-       RMSE       MAE  R-squared  Adj. R-squared      MAPE
-0  8.625314  6.564706    0.92252        0.920558  5.025347 
-
-Test Leistung mit logarithmische Transformation
-
-       RMSE       MAE  R-squared  Adj. R-squared      MAPE
-0  0.125355  0.095401   0.933486        0.931801  0.984991 
-
-Test Leistung bei Skalierung mit konstantem Faktor
-
-       RMSE       MAE  R-squared  Adj. R-squared       MAPE
-0  0.280593  0.206153   0.894297         0.89162  12.552519 
-
+Testing Data Metrics:
+Mean Absolute Error:  0.20770242427321373
+Mean Squared Error:  0.08245937300124358
+R-squared:  0.8921315363749307
 </pre>
 </div>
 </div>
@@ -10885,9 +10852,10 @@ Test Leistung bei Skalierung mit konstantem Faktor
 <span class="n">numerical_features</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'year'</span><span class="p">,</span><span class="s1">'tax'</span><span class="p">,</span><span class="s1">'fuelConsumption'</span><span class="p">,</span><span class="s1">'age'</span><span class="p">]</span>
 
 <span class="c1"># Aufteilen der Daten in X und y</span>
-<span class="n">X</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">'price'</span> <span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">'price'</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">'price'</span><span class="p">]</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+
 <span class="c1"># Aufteilen der Daten in Trainings- und Testdaten</span>
 <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 
@@ -10899,7 +10867,7 @@ Test Leistung bei Skalierung mit konstantem Faktor
     <span class="p">])</span>
 
 <span class="c1"># Erstellung des MLP Regressors</span>
-<span class="n">mlp</span> <span class="o">=</span> <span class="n">MLPRegressor</span><span class="p">(</span><span class="n">hidden_layer_sizes</span><span class="o">=</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">20</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="s1">'relu'</span><span class="p">,</span> <span class="n">solver</span><span class="o">=</span><span class="s1">'adam'</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">2000</span><span class="p">)</span>
+<span class="n">mlp</span> <span class="o">=</span> <span class="n">MLPRegressor</span><span class="p">(</span><span class="n">hidden_layer_sizes</span><span class="o">=</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">20</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="s1">'relu'</span><span class="p">,</span> <span class="n">solver</span><span class="o">=</span><span class="s1">'adam'</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
 
 <span class="c1"># Erstellen einer Pipeline</span>
 <span class="n">pipeline</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">(</span><span class="n">steps</span><span class="o">=</span><span class="p">[(</span><span class="s1">'preprocessor'</span><span class="p">,</span> <span class="n">preprocessor</span><span class="p">),</span> <span class="p">(</span><span class="s1">'regressor'</span><span class="p">,</span> <span class="n">mlp</span><span class="p">)])</span>
@@ -10927,8 +10895,8 @@ Test Leistung bei Skalierung mit konstantem Faktor
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Mean Squared Error: 67.13068267279856
-Predicted Price: 145.46489384387084
+<pre>Mean Squared Error: 67.45888869859509
+Predicted Price: 143.08989754056213
 </pre>
 </div>
 </div>
@@ -10966,8 +10934,8 @@ Predicted Price: 145.46489384387084
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Mean Squared Error: 67.13068267279856
-R^2 Score: 0.9312553298386542
+<pre>Mean Squared Error: 67.56701919361232
+R^2 Score: 0.9308085027097109
 </pre>
 </div>
 </div>
@@ -11001,7 +10969,6 @@ R^2 Score: 0.9312553298386542
 <span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">metrics</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
-<span class="n">X</span> <span class="o">=</span> <span class="n">df2</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">df2</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">'price'</span><span class="p">])</span>
 
 <span class="c1"># Datensatz in Features und Zielvariable aufteilen</span>
@@ -11074,7 +11041,6 @@ Adjusted R-squared: 0.9028238254621282
 <span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">metrics</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
-<span class="n">X</span> <span class="o">=</span> <span class="n">df2</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">df2</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">'price'</span><span class="p">])</span>
 
 <span class="c1"># Datensatz in Features und Zielvariable aufteilen</span>
